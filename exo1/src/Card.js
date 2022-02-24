@@ -1,15 +1,15 @@
 import React from 'react';
 import './Card.css';
 
-function CreateCard(props) {
+function Card({card}) {
         return (
         <div className='container'>
             <div className='border'>
-                <div>{props.titre}</div>
-                <p>{props.message}</p>
+                <div>{card.titre}</div>
+                <p>{card.message}</p>
             </div>
         </div>
     );
 }
 
-export default CreateCard;
+export default Card;
